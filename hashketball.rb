@@ -165,3 +165,10 @@ def team_names
 game_hash.values.map {|value| value[:team_name]}
 
 end
+
+def player_stats(player)
+  
+  player_helper[player][player]
+  
+end
+  
