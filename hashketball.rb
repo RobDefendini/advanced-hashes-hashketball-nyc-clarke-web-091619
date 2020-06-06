@@ -165,6 +165,7 @@ def team_names(game)
   game_hash.values.each do |team_info|
     if team_info.has_value?(game)
       return [:home][:team_name] && [:away][:team_name]
+      binding.pry
     end
   end
 end
