@@ -160,3 +160,12 @@ def team_colors(team)
   end
 end
 
+def team_names(game)
+  
+  game_hash.values.each do |team_info|
+    if game_hash[:team_info].has_value?
+      return [:home][:team_name] && [:away][:team_name]
+    end
+  end
+end
+
