@@ -145,7 +145,7 @@ player_helper[player][:points]
 
 end    
 
-def show_size(player)
+def shoe_size(player)
   
   player_helper[player][:shoe]
   
