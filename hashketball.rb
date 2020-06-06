@@ -140,7 +140,7 @@ def player_numbers(team)
 end
 
 def num_points_scored(player)
-
+nil = 0 
 player_helper[player][:points]
 
 end    
