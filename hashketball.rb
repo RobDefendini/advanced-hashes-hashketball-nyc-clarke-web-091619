@@ -153,7 +153,7 @@ end
 
 def team_colors(team)
   
-  get_team_helper[team][:colors]
+  get_team_helper[:team_name][:colors]
   
 end
 
