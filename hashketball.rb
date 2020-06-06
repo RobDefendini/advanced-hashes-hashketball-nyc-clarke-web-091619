@@ -118,11 +118,11 @@ def game_hash
   }
 }
 end
-
+####################
 def player_helper
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
-
+####################
 def get_team_helper(team)
   
   case team 
@@ -132,25 +132,25 @@ def get_team_helper(team)
       game_hash[:away]
   end
 end
-
+####################
 def player_numbers(team)
   get_team_helper(team)[:players].map do |player,value|
     value[:number]
   end
 end
-
+####################
 def num_points_scored(player)
   
 player_helper[player][:points]
 
 end    
-
+####################
 def shoe_size(player)
   
   player_helper[player][:shoe]
   
 end
-
+####################
 def team_colors(team)
 
   game_hash.values.each do |team_info|
@@ -161,12 +161,10 @@ def team_colors(team)
 end
 
 def team_names(game)
-  
-  game_hash.values.each do |team_info|
-    if team_info.has_value?(game)
-      return [:home][:team_name] && [:away][:team_name]
-      binding.pry
+
+ game_hash.values.each do |team_info|
+    if team_info.has_value?(team)
+      return team_info[:team_names].map(&:capitalize)
     end
   end
 end
-
