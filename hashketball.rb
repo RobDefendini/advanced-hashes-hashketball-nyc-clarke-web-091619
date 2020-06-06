@@ -168,7 +168,7 @@ end
 
 def player_stats(player)
   
-  player_helper[player][player]
+  player_helper[player]
   
 end
   
