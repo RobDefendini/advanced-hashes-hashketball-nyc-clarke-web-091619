@@ -172,4 +172,7 @@ def player_stats(player)
   
 end
 ###################
-def 
+def big_shoe_rebounds
+  
+  player_helper[player][:shoe]
+end
