@@ -160,7 +160,7 @@ def team_colors(team)
   end
 end
 
-def team_names(game)
+def team_names
 
  game_hash.values.each do |team_info|
     if team_info.has_value?(team)
