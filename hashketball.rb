@@ -163,6 +163,6 @@ end
 def team_names
 
  game_hash.values.each do |team_info|
-game_hash.values.map {|value| value [:team_name]}
+game_hash.values.map {|value| value[:team_name]}
 end
 end
