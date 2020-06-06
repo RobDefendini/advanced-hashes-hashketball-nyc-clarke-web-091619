@@ -1,6 +1,7 @@
 require 'pry'
 
-# Write your code here!
+###################
+
 def game_hash
   game_hash = {
     :home => {
@@ -118,11 +119,15 @@ def game_hash
   }
 }
 end
-####################
+
+###################
+
 def player_helper
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
-####################
+
+###################
+
 def get_team_helper(team)
   
   case team 
@@ -132,25 +137,33 @@ def get_team_helper(team)
       game_hash[:away]
   end
 end
-####################
+
+###################
+
 def player_numbers(team)
   get_team_helper(team)[:players].map do |player,value|
     value[:number]
   end
 end
+
 ####################
+
 def num_points_scored(player)
   
 player_helper[player][:points]
 
 end    
+
 ####################
+
 def shoe_size(player)
   
   player_helper[player][:shoe]
   
 end
+
 ####################
+
 def team_colors(team)
 
   game_hash.values.each do |team_info|
@@ -159,19 +172,25 @@ def team_colors(team)
     end
   end
 end
+
 ####################
+
 def team_names
 
 game_hash.values.map {|value| value[:team_name]}
 
 end
+
 ###################
+
 def player_stats(player)
   
   player_helper[player]
   
 end
+
 ###################
+
 def big_shoe_rebounds
   biggest_shoe = 0
   num_rebounds = 0
@@ -191,3 +210,5 @@ def big_shoe_rebounds
   end
   num_rebounds
 end
+
+###################
