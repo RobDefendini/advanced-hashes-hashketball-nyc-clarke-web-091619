@@ -185,7 +185,6 @@ player_helper.each do |attribute, data|
           end
         end
       end
-    end
   end
   num_rebounds
 end
