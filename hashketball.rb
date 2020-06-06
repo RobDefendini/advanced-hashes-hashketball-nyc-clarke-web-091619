@@ -176,7 +176,7 @@ def big_shoe_rebounds
   biggest_shoe = 0
   num_rebounds = 0
 
-player_helper[:players].each do |player, data|
+player_helper.each[:players] do |player, data|
       if player == :players
         data.each do |player, stats|
           if stats[:shoe] > biggest_shoe
